@@ -1,0 +1,136 @@
+/*
+File: pacific.css
+    GUIAssignment:  Style a Site with External CSS
+    Haley Santomas, UMass Lowell Computer Science, haley_santomas@student.uml.edu
+    Date: 7/16/2021
+    Summary: The CSS for a webpage about a resort. No modifications have been made to the HTML in index.html.
+	This file provides color, backgrounds, positioning, and general styling for the assignment.
+*/
+
+/* Makes block display the default. */
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* Sets main background image for the website and the color at the bottom of the gradient. */
+body {
+	margin: 0 0 0 0;
+	background-color: #00569f;
+	background-image: url("ptrbackground.jpg");
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centers the bulk of the webpage and sets the width. */
+#wrapper {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	min-width: 600px;
+}
+
+/* Stylizes the nav bar and floats it left so the following elements appear to its right. */
+nav {
+	background-color:  skyblue;
+	width: 250px;
+	margin: 0 0 0 0;
+	float: left;
+	height: 700px;
+	vertical-align: top;
+}
+
+/* Styles the sidebar nav by removing bullet points and padding it out accordingly. */
+nav ul {
+	font-size: 1.2em;
+	margin: 0 0 0 0;
+	list-style-type: none;
+	font-weight: bold;
+	padding: 20px 0 0 20px;
+}
+
+/* The following three blocks style the nav links. */
+nav a {
+	text-decoration: none;
+	color: rgb(85, 5, 85);
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* Header styles, including the main header's background image, which stretches with the screen. */
+h1 {
+	background-color: navy;
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	margin-bottom: 0;
+	padding: 10px;
+	margin: 2% 0 0 0;
+}
+h2 {
+	color: #3399CC;
+	padding-left: 0;
+	margin: 0 0 0 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Reduces the size of the contact information text. */
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+/* Styles the main content of the page. */
+#content {
+	background-color: white;
+	height: 650px;
+	margin: 0 0 0 250px;
+	padding-left: 30px;
+}
+
+/* Bolds and colors the spans of text bearing the resort name. */
+.resort {
+	color: #7289bd;
+	font-weight: bold;
+}
+
+/* Floats the page image left so subsequent elements appear to its right. */
+img {
+	margin-right: 10px;
+	float:left;
+}
+
+/* Removes the automatically generated margins from text elements. */
+p {
+	margin: 0 0 0 0;
+}
+
+/* Stylizes the unordered list within the content element to use a special bullet point, and makes bullet points appear inside the element so it lines up with the above text. */
+#content > ul {
+	list-style-image: url("marker.gif");
+	list-style-position: inside;
+	display: inline-block;
+	padding-left: 0;
+}
+
+/* Stylizes the footer to be the right width and have the right background color. */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: white;
+	margin: 0 0 0 250px;
+	padding-left: 30px;
+	height: 50px;
+	font-style: italic;
+	font-size: 80%;
+}
